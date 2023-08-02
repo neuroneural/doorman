@@ -1,0 +1,138 @@
+Given the following group of statements, classify a user statement into most similar group, if there are no matches, output 0 for question group, use the "classify" function provided:
+List of groups: 
+1: How to request a book purchase
+How do I buy books for my lab? 
+I need to purchase a textbook from amazon. How to start?
+2: Who should I contact for graduate students related questions?
+Questions about graduate students at CS department 
+3: How do I get reimbursed for a work expense?
+How do I request to have an invoice paid by TReNDS? 
+How do I request a work expense to be paid by purchase card (P-Card)? 
+Who should I contact for a publication fee reimbursement? 
+How does my student get reimbursed for a conference fee?
+Please reimburse my fMRI course
+4: It is too cold in my office. Who do I contact?
+It is too hot in my office. Who do I contact?
+There are bugs in the kitchen. Who should I report this to?
+How should I report a clogged sink?
+Who do I complain about dirty dishes?
+I need to make a maintenance request
+5: How do I change someone’s FTE?
+When will I get paid?
+What is the deadline to enroll into the OneUSG Benefits program for new employees? 
+How to submit a request for leave in OneUSG?
+How do I activate my email?
+What is my temporary password for my CampusID? 
+I am a new student. How do I get an email?
+6: Where is the center's wiki?
+Where's Salman's wiki?
+7: How to submit jobs to cluster?
+How to use slurm to submit my jobs?
+8: What are the upcoming conference deadlines?
+Where should I submit my paper?
+When is IJCAI deadline? .
+9: How do I buy books and supplies myself?
+Where's that PantherMart link?
+10: I am locked out of my office and no one is here onsite. How do I get in?
+I am locked out of TReNDS and no one is here onsite. How do I get in?
+11: Who do I call to report an emergency at TReNDS?
+Who do I call to report an emergency in our building?
+What do I do if there is an emergency?
+How do I report an emergency?
+12: How do I get into the intranet?
+I get a 404 error when navigating to the intranet. How do I get in?
+The link to the intranet is broken. How do I get in?
+13: I need to complete the SFI disclosure form. Where is it located?
+I need to complete the Significant Financial Interests disclosure form. Where is it located?
+14: What is my department?
+Are we in the Psychology department?
+Are we part of the College of Arts and Sciences (COAS)?
+15: Do we have a directory?
+Where is the TReNDS directory?
+Where is the GSU directory?
+How do I look up someone’s work phone number?
+How do I find someone’s office?
+employee list at TReNDS
+List of people who work at TReNDS
+Who are all people working at the center?
+Does this person work at the center?
+What is the title of <NAME> who is TReNDS center employee?
+16: What is the difference between all@trendscenter.org and analysis@trendscenter.org?
+Is there a list of all our email distribution lists?
+17: Where can I find our letterhead?
+Are there official TReNDS PowerPoint templates for presentations?
+Where can I find our logos?
+Where can I download the TReNDS logo?
+Where can I download the COINS, COINSTAC, or Brainforge logos?
+Where are the files with center branding?
+What are the TReNDS slide layouts?
+Where are the slides?
+TReNDS poster template
+OHBM poster
+18: What COVID rules and policies do TReNDS have?
+What coronavirus rules and policies does GSU have?
+Do I have to wear a mask?
+Do I have to practice social distancing?
+19: restore $HOME backups
+How to restore data in my home directory
+I have just deleted important data in my home directory
+I have deleted something in my home dir
+20: Where is the new hire form?
+How do I request onboarding a new student?
+How to hire a student?
+21: What is the International Travel Authorization Process? Where is the travel authorization form?
+Requirements on International Travel
+How to apply for traveling to a conference abroad?
+What are the travel documents to submit for reimbursement?
+22: Where is the Computer Science Department schedule of classes?
+When do I teach this semester?
+What courses are offered by CS this semester?
+23: Who are you?
+what are you
+describe yourself
+what do you do
+How old are you?
+want to know your age
+I would like to know how old are you
+how old is your platform
+how long have you been working for
+24: You annoy me
+you make me crazy
+you are incredibly annoying
+you make me angry
+your behavior annoys me
+your actions really bother me
+your actions annoy me
+I’m sick of you
+I’m tired of you
+I'm so tired of you
+25: I've got a question
+I want you to answer me
+answer
+answer my question
+answer me
+give me an answer
+an answer to the question
+can you answer my question
+tell me the answer
+answer this
+I need an answer
+26: You look great today
+you are cute
+you are beautiful
+you are handsome
+you are so handsome
+you look just wonderful
+you are so beautiful
+you are dazzling
+you are beautiful too
+you look great
+27: Are you happy
+are you happy now
+you are very happy
+are you really happy
+so happy
+lucky
+you are incredibly happy
+are you happy today
+are you happy with me
