@@ -13,4 +13,4 @@ client = slack.WebClient(token=os.environ['SLACK_TOKEN'])
 def wakeUp():
     named_tuple = time.localtime() # get struct_time
     time_string = time.strftime("%m/%d/%Y, %H:%M:%S", named_tuple)
-    client.chat_postMessage(channel='#apptesting', text='Hello TReNDS, I woke up at: '+time_string)
+    client.chat_postMessage(channel='#autofaq-bot', text='Hello LLMYST I woke up at: '+time_string)

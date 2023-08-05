@@ -10,11 +10,11 @@ from flask import request
 from slackeventsapi import SlackEventAdapter
 import pandas as pd
 import time
-from doormanFunction import doorman
 from wakeUp import wakeUp
 from remove_pings import remove_pings
 from doormanFailure import doormanFailure
 from MLBBQ_script import *
+from doorman_with_thread_mem import *
 #Main things to remove hard coding from (Bot's user id)
 #also todo (Remove the @Doorman from context being questioned in a good way)
 df = pd.read_csv('QandA_list.csv', encoding='utf-8')
@@ -25,6 +25,8 @@ load_dotenv(dotenv_path=env_path)
 
 openai.api_key = token=os.environ['CHAT_TOKEN']
 
+doorman_id = token=os.environ['DOORMAN_ID']
+print(doorman_id)
 app = Flask(__name__)
 slack_event_adapter = SlackEventAdapter(
     os.environ['SIGNING_SECRET'], '/slack/events',app)
@@ -44,12 +46,12 @@ def message(payload):
     user_id = event.get('user')
     text = event.get('text')
     inp = "User input: " + "\"" + text + "\""
-    if user_id != 'U05G1CGSU2X':
+    if user_id != doorman_id:
         if channel_id[0]!='D':
-            if("U05G1CGSU2X" in text):
-                text = remove_pings(text)
+            if(doorman_id in text):
+                text = remove_pings(text,doorman_id)
                 if len(text) != 0:       
-                    index = doorman(inp)
+                    index = doormanWMemory(text,message_ts)
                     if index == 0:
                         text = doormanFailure()
                         client.chat_postMessage(channel=channel_id, text=text,thread_ts=message_ts)
@@ -60,15 +62,10 @@ def message(payload):
                 else:
                     client.chat_postMessage(channel=channel_id, text="Please ensure that your question is in the message you are mentioning Doorman in",thread_ts=message_ts)
         else:
-            index = doorman(inp)
-            if index == 0:
-                text = doormanFailure()
-                client.chat_postMessage(channel=user_id, text=text,thread_ts=message_ts)   
-            else:
-                text = answers[index - 1]
-                client.chat_postMessage(channel=user_id, text=text,thread_ts=message_ts)
+            index = doormanWMemory(inp,message_ts)
+            client.chat_postMessage(channel=user_id, text=index,thread_ts=message_ts)
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    app.run(debug=True, port=4990)
 if 1==1:
     print("0")
