@@ -8,12 +8,20 @@ from dotenv import load_dotenv
 from flask import Flask
 from slackeventsapi import SlackEventAdapter
 import pandas as pd
+from doormanFailure import *
+
+global logs
+def value_exists_in_json(file_path, value):
+    data = load_json_from_file(file_path)
+    print(data)
+    #return value == data
 
 def write_json_to_file(data, file_path):
     with open(file_path, 'w') as f:
         json.dump(data, f)
 
 def load_json_from_file(file_path):
+
     with open(file_path, 'r') as f:
         data = json.load(f)
     return data['logs']
@@ -37,7 +45,8 @@ def load_log(logs, t_id):
             return log['thread_log']
     return []
 
-def doorman_v0(logs, t_id, prompt, answers):
+def doorman_v0(t_id, prompt, answers):
+    global logs
     # Function params, mess around with these to experiment with model behvior
     null_response = "I'm sorry, could you provide more clarifying information?"
     max_tokens = 100
@@ -81,8 +90,11 @@ def doorman_v0(logs, t_id, prompt, answers):
             logs = append_log(logs, t_id, "assistant", answer)
             return index
         else:
+            print(logs)
             logs = append_log(logs, t_id, "user", prompt)
+            print(logs)
             logs = append_log(logs, t_id, "assistant", null_response)
+            print("Null response returned")
             return 0
     except:
         logs = append_log(logs, t_id, "user", prompt)
@@ -124,19 +136,21 @@ if __name__ == "__main__":
 ################################################
 ################################################
 def doormanWMemory(input,thread_id):
+    global logs
     df = pd.read_csv('QandA_list.csv', encoding='utf-8')
     answers = df["Question answers"].tolist()
     try:
         logs = load_json_from_file("doorman_log.json")
         t_id = thread_id
         prompt = input
-        index = doorman_v0(logs, t_id, prompt, answers)
+        index = doorman_v0(t_id, prompt, answers)
+        print(logs)
         if index == 0:
             print("Not found")
-            return(0)
+            write_json_to_file({"logs" :logs}, "doorman_log.json")
+            return(doormanFailure())
         else:
             print("Found")
-            print(answers[index-1])
             write_json_to_file({"logs" :logs}, "doorman_log.json")
             return(answers[index-1])
     except Exception as e:
@@ -147,3 +161,7 @@ def doormanWMemory(input,thread_id):
             print("<dev flag> doorman log not found, making empty file called doorman_log.json")
             logs = {"logs" : []}
             write_json_to_file(logs, "doorman_log.json")
+            return doormanWMemory(input,thread_id)
+
+def checkFor(data):
+    return value_exists_in_json("doorman_log.json",data)

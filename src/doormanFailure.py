@@ -12,3 +12,4 @@ def doormanFailure():
             text="I'm so sorry I'm new here, find it in your heart to forgive me and try rephrasing that. I might just get it!"
         case _:
             text="def Case"
+    return text
