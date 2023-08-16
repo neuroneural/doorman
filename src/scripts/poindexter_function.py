@@ -125,5 +125,90 @@ def get_introduction(url):
     return remove_newlinechar(fetch_introduction(get_pdf_text(url)))
 def get_conclusion(url):
     return fetch_conclusion(remove_newlinechar(get_pdf_text(url)))
-def dumb_down_abstract(url):
-    return remove_newlinechar(dumb_this_down(get_abstract(url), 5))
+def fetch_everything(url):
+    pdf = get_pdf_text(url)
+    content = {}
+    content["title"] = get_title(url)
+    content["authors"] = get_authors(url)
+    content["abstract"] =  get_abstract(url)
+    content["introduction"] = fetch_introduction(pdf)
+    content["conclusion"] =  fetch_conclusion(pdf)
+    return content
+test_url = "https://arxiv.org/abs/2205.03451"
+
+def append_title(meta_prompt, title):
+    if ("[Failed match flag]" not in title):
+        meta_prompt += "Summarize the following paper titled \"" + title + "\" "
+    else:
+        meta_prompt += "Summarize the following paper "
+    return meta_prompt
+def append_authors(meta_prompt, authors):
+    if ("[Failed match flag]" in authors):
+        return meta_prompt
+    if (len(authors) == 1):
+        return meta_prompt + "writen by " + author + " "
+    meta_prompt += "written by "
+    for i in range(len(authors)-1):
+        meta_prompt += authors[i] + ", "
+    meta_prompt += authors[-1] + " "
+    return meta_prompt
+# Levels = ["child", "teenager", "undergraduate", "graduate", "phd"]
+def append_level(meta_prompt, level):
+    if level == "child":
+        return meta_prompt + "such that a child could understand it:\n"
+    if level == "teenager":
+        return meta_prompt + "such that a teenager could understand it:\n"
+    if level == "undergraduate":
+        return meta_prompt + "at the level of an undergraduate:\n"
+    if level == "graduate":
+        return meta_prompt + "to a graduate or masters program audience:\n"
+    if level == "phd":
+        return meta_prompt + "to a phd, do not leave out technicalities:\n"
+def append_abstract(meta_prompt, abstract):
+    if ("[Failed match flag]" in abstract):
+        return meta_prompt
+    abstract = remove_newlinechar(abstract)
+    meta_prompt += "Abstract: " + abstract + "\n"
+    return meta_prompt
+def append_introduction(meta_prompt, introduction):
+    if ("[Failed match flag]" in introduction):
+        return meta_prompt
+    introduction = remove_newlinechar(introduction)
+    meta_prompt += "Introduction: " + introduction + "\n"
+    return meta_prompt
+def append_conclusion(meta_prompt, conclusion):
+    if ("[Failed match flag]" in conclusion):
+        return meta_prompt
+    conclusion = remove_newlinechar(conclusion)
+    meta_prompt += "Conclusion: " + conclusion + "\n"
+    return meta_prompt
+def format_meta_prompt(content, level):
+    meta_prompt = ""
+    meta_prompt = append_title(meta_prompt, content["title"])
+    meta_prompt = append_authors(meta_prompt, content["authors"])
+    meta_prompt = append_level(meta_prompt, level)
+    meta_prompt += "\n"
+    meta_prompt = append_abstract(meta_prompt, content["abstract"])
+    meta_prompt += "\n"
+    meta_prompt = append_introduction(meta_prompt, content["introduction"])
+    meta_prompt += "\n"
+    meta_prompt = append_conclusion(meta_prompt, content["conclusion"])
+    return meta_prompt
+
+
+
+##### Function for Mateoooooo #################
+# for level, select from "child", "teenager", "undegraduate", "graduate", "phd" 
+def poindexter(url, level = "child"):
+    content = fetch_everything(url)
+    meta_prompt = format_meta_prompt(content, level)
+    response = openai.ChatCompletion.create(
+    model = "gpt-3.5-turbo-16k",
+    messages = [
+        {"role": "system", "content": meta_prompt},
+    ],
+    max_tokens = 500,
+    temperature = 0.8,
+    )
+    return response["choices"][0]["message"]["content"]
+print(poindexter(test_url, "child"))
