@@ -28,7 +28,6 @@ slack_event_adapter = SlackEventAdapter(os.environ['SIGNING_SECRET'], '/doorman/
 df = pd.read_csv('QandA_list.csv', encoding='utf-8')
 answers = df["Question answers"].tolist()
 extract_and_format("QandA_list.csv","llmlads_prompt.txt")
-print(generate_modal_from_csv())
 @slack_event_adapter.on('message')
 def message(payload):
     event = payload.get('event',{})
