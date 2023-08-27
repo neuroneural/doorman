@@ -91,7 +91,6 @@ def howManyQuestions():
 def printQuestionList():
     with open('llmlads_prompt.txt', 'r', encoding='utf-8') as file:
         content = file.read()
-    print(content)
     client.chat_postMessage(channel='#test', text=f'Current question list:{content}')
     return '', 200
 
@@ -121,7 +120,6 @@ def slack_interactive():
             # Generate the new modal content
             new_modal = generate_modal_from_csv()
             response = update_slack_modal(data['trigger_id'],data['view']['id'], new_modal)
-            print(response)
     return '', 200
 
 # Surely we can do something better than this 
