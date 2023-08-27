@@ -76,14 +76,10 @@ def questionSetRemove():
     data=request.form
     text = data.get('text')
     trigger_id = request.form['trigger_id']
-    if text is None :
-        open_deletion_modal(trigger_id)
-        extract_and_format("QandA_list.csv","llmlads_prompt.txt")
-    elif text.isdigit: 
-        client.chat_postMessage(channel='#test', text=f'Removed question:\n{remove_row_by_number("QandA_list.csv",int(text))}' )
-        client.chat_postMessage(channel='#test', text=f'Current amount of questions:{get_number_of_rows("QandA_list.csv")}' )
-        extract_and_format("QandA_list.csv","llmlads_prompt.txt")
-    
+    open_deletion_modal(trigger_id)
+    extract_and_format("QandA_list.csv","llmlads_prompt.txt")
+    client.chat_postMessage(channel='#test', text=f'Current amount of questions:{get_number_of_rows("QandA_list.csv")}' )
+
     return '', 200
 
 @app.route('/doorman/howmanyqs', methods=['GET','POST'])
