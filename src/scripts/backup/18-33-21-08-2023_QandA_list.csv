@@ -1,26 +1,26 @@
-Question Categories,Question answers,Model Questions,Keywords
-Book Purchase,"Please, either form a cart in the <a href=""https://panthermart.gsu.edu/"">Panthermart</a> and assign it to Brittny, or send an email to &nbsp;ops@trendscenter.org","How to request a book purchase
+,Question Categories,Question answers,Model Questions,Keywords
+0,Book Purchase,"Please, either form a cart in the <a href=""https://panthermart.gsu.edu/"">Panthermart</a> and assign it to Brittny, or send an email to &nbsp;ops@trendscenter.org","How to request a book purchase
 How do I buy books for my lab? 
 I need to purchase a textbook from amazon. How to start?
 ","""Book Purchase"" ""Textbook"" ""Books"""
-Graduate Student Questions,"For all graduate student issues at the GSU CS department, please contact Tyra Robinson trobinson100@gsu.edu","Who should I contact for graduate students related questions?
+1,Graduate Student Questions,"For all graduate student issues at the GSU CS department, please contact Tyra Robinson trobinson100@gsu.edu","Who should I contact for graduate students related questions?
 Questions about graduate students at CS department 
 ","""Graduate Students"". ""Grads"", ""Grad"","
-Reimbursements,"Please complete and submit a TReNDS Payment Request form to <a href=""mailto:ops@trendscenter.org""><u>ops@trendscenter.org</u></a>. The Payment Request Form is in the <a href=""https://sites.google.com/gsu.edu/trends-center-intranet/purchasing-and-travel?authuser=0""><u>Purchasing and Trave</u></a>l section of TReNDS Intranet with instructions included in the download. All payment requests should be made within 30 days of the receipt being submitted for reimbursements. It is important to make sure you submit your request by downloading the most recent version of the form available on the TReNDS Intranet to assure the use of accurate account information.","How do I get reimbursed for a work expense?
+2,Reimbursements,"Please complete and submit a TReNDS Payment Request form to <a href=""mailto:ops@trendscenter.org""><u>ops@trendscenter.org</u></a>. The Payment Request Form is in the <a href=""https://sites.google.com/gsu.edu/trends-center-intranet/purchasing-and-travel?authuser=0""><u>Purchasing and Trave</u></a>l section of TReNDS Intranet with instructions included in the download. All payment requests should be made within 30 days of the receipt being submitted for reimbursements. It is important to make sure you submit your request by downloading the most recent version of the form available on the TReNDS Intranet to assure the use of accurate account information.","How do I get reimbursed for a work expense?
 How do I request to have an invoice paid by TReNDS? 
 How do I request a work expense to be paid by purchase card (P-Card)? 
 Who should I contact for a publication fee reimbursement? 
 How does my student get reimbursed for a conference fee?
 Please reimburse my fMRI course
 ","""Reimburment"", ""Reimbursed"", ""P-Card"", ""Reimburse"""
-Office Maintenance,"Please submit a TReNDS Facilities Report Form here. If the situation is a facility emergency, please email ops@trendscenter.org or find a member of the Operations Team.","It is too cold in my office. Who do I contact?
+3,Office Maintenance,"Please submit a TReNDS Facilities Report Form here. If the situation is a facility emergency, please email ops@trendscenter.org or find a member of the Operations Team.","It is too cold in my office. Who do I contact?
 It is too hot in my office. Who do I contact?
 There are bugs in the kitchen. Who should I report this to?
 How should I report a clogged sink?
 Who do I complain about dirty dishes?
 I need to make a maintenance request
 ","""Cold"", ""Hot"", ""Warm"", ""Chilly"", ""Bugs"", ""Leak"", ""Dirty Dishes"", ""Maintenance"", ""Clogged"", ""Clog"""
-Human Resources concerns,"Please submit any HR concerns to the following email: hr@trendscenter.org. This will help ensure that the proper routing of your questions and concerns is handled directly by our HR support here at the Center. These inquiries may include questions about employee onboarding, payroll, employee training, or others specific to HR.","How do I change someone’s FTE?
+4,Human Resources concerns,"Please submit any HR concerns to the following email: hr@trendscenter.org. This will help ensure that the proper routing of your questions and concerns is handled directly by our HR support here at the Center. These inquiries may include questions about employee onboarding, payroll, employee training, or others specific to HR.","How do I change someone’s FTE?
 When will I get paid?
 What is the deadline to enroll into the OneUSG Benefits program for new employees? 
 How to submit a request for leave in OneUSG?
@@ -28,32 +28,32 @@ How do I activate my email?
 What is my temporary password for my CampusID? 
 I am a new student. How do I get an email?
 ","""HR"", ""Human Resources"", ""FTE"", ""Paid"", ""Payment"", ""OneUSG"", ""Request Leave"", ""Activate email"" "
-Wiki,"The wiki is located at the following address: <a href=""https://trendscenter.github.io/wiki/"" target=""_blank"">https://trendscenter.github.io/wiki/</a>&nbsp;","Where is the center's wiki?
+5,Wiki,"The wiki is located at the following address: <a href=""https://trendscenter.github.io/wiki/"" target=""_blank"">https://trendscenter.github.io/wiki/</a>&nbsp;","Where is the center's wiki?
 Where's Salman's wiki?
 ","""Wiki"", ""Salman's Wiki"", ""Center Wiki"""
-Submitting jobs to ARCTIC,"You can find detailed examples on <a href=""https://trendscenter.github.io/wiki/docs/Job_submission.html"" target=""_blank"">this wiki page</a>","How to submit jobs to cluster?
+6,Submitting jobs to ARCTIC,"You can find detailed examples on <a href=""https://trendscenter.github.io/wiki/docs/Job_submission.html"" target=""_blank"">this wiki page</a>","How to submit jobs to cluster?
 How to use slurm to submit my jobs?
 ","""Submit jobs"", ""Arctic"", ""Using Slurm"", ""Slurm"""
-Conference Deadlines,,"What are the upcoming conference deadlines?
+7,Conference Deadlines,,"What are the upcoming conference deadlines?
 Where should I submit my paper?
 When is IJCAI deadline? 
 ","""Conference"", ""Paper submission"", ""IJCAI deadline"""
-Where to make individual purchases,"You can go to the <a href=""https://solutions.sciquest.com/apps/Router/Home?tmstmp=1636359447988"" target=""_blank"">PantherMart</a>, choose a vendor, form your cart, decide on the funding source, and assign the cart to either Brittny or Amanda.","How do I buy books and supplies myself?
+8,Where to make individual purchases,"You can go to the <a href=""https://solutions.sciquest.com/apps/Router/Home?tmstmp=1636359447988"" target=""_blank"">PantherMart</a>, choose a vendor, form your cart, decide on the funding source, and assign the cart to either Brittny or Amanda.","How do I buy books and supplies myself?
 Where's that PantherMart link?
 ","""Myself"", ""PantherMart"", ""Buy for myself"""
-Office Access," Contact our building's Security at the desk on the lobby level of 55 Park Pl. You can do this in person, or by calling (404) 659-7212.","I am locked out of my office and no one is here onsite. How do I get in?
+9,Office Access," Contact our building's Security at the desk on the lobby level of 55 Park Pl. You can do this in person, or by calling (404) 659-7212.","I am locked out of my office and no one is here onsite. How do I get in?
 I am locked out of TReNDS and no one is here onsite. How do I get in?
 ","""Locked out"", ""Get in"", ""Access building"""
-Emergencies,"If there is an emergency in our building, DO NOT call 911! Please call 3-333 (or 404-413-3333 if not calling from a GSU phone) which goes straight to GSU police. After, please call building security at 404-659-7212 if necessary.","Who do I call to report an emergency at TReNDS?
+10,Emergencies,"If there is an emergency in our building, DO NOT call 911! Please call 3-333 (or 404-413-3333 if not calling from a GSU phone) which goes straight to GSU police. After, please call building security at 404-659-7212 if necessary.","Who do I call to report an emergency at TReNDS?
 Who do I call to report an emergency in our building?
 What do I do if there is an emergency?
 How do I report an emergency?
 ","""Emergency"", ""Report emergency"""
-Intranet Access,"You must use your GSU email and password when you are logging into any of our TReNDS Google accounts. TReNDS does not have access to G-Mail, which can make logging in challenging. We recommend logging in here first with your GSU credentials and then trying to navigate to the intranet ","How do I get into the intranet?
+11,Intranet Access,"You must use your GSU email and password when you are logging into any of our TReNDS Google accounts. TReNDS does not have access to G-Mail, which can make logging in challenging. We recommend logging in here first with your GSU credentials and then trying to navigate to the intranet ","How do I get into the intranet?
 I get a 404 error when navigating to the intranet. How do I get in?
 The link to the intranet is broken. How do I get in?
 ","""Intranet"", ""404 Error"""
-Significant Financial Interests (SFI) disclosure form,"Step 1: Use your GSU CampusID and Password to login to https://sfi.gsu.edu        
+12,Significant Financial Interests (SFI) disclosure form,"Step 1: Use your GSU CampusID and Password to login to https://sfi.gsu.edu        
 Step 2: Under the My Disclosure tab scroll down to the Annual Disclosure section. Please note that if you are an employee in the TReNDS Department, your division is URSA and your Department is TReNDS. Please do not indicate Psychology as your department. Contact hr@trendscenter.org if you have questions regarding your department.
 Step 3: Select Yes for Annual Disclosure and answer the corresponding questions that appear. 
 Step 4: Select the Save Annual Disclosure button at the bottom of this section to save your responses.
@@ -62,12 +62,12 @@ Step 6: Also click the Update button at the bottom of the form to save all chang
 Please use the following How-To Guide for additional guidance: How to Complete an Annual Disclosure.","I need to complete the SFI disclosure form. Where is it located?
 I need to complete the Significant Financial Interests disclosure form. Where is it located?
 ","""SFI"", ""Significant Financial Interests"""
-Departments,All TReNDS non-faculty employees are in the TReNDS department under the division of URSA (University Research Services & Administration). TReNDS faculty employees are in the department of Computer Science which is under COAS. TReNDS is not part of Psychology or College of Arts and Sciences (COAS). Contact hr@trendscenter.org if you have questions regarding your department.,"What is my department?
+13,Departments,All TReNDS non-faculty employees are in the TReNDS department under the division of URSA (University Research Services & Administration). TReNDS faculty employees are in the department of Computer Science which is under COAS. TReNDS is not part of Psychology or College of Arts and Sciences (COAS). Contact hr@trendscenter.org if you have questions regarding your department.,"What is my department?
 Are we in the Psychology department?
 Are we part of the College of Arts and Sciences (COAS)?
 
 ","""Which Deparment"", ""College of arts and sciences"", "
-Directory Questions,A TReNDS Center specific directory can be found here on the intranet. The GSU campus directory can be found here.  You can also find people by task on the trends intranet.,"Do we have a directory?
+14,Directory Questions,A TReNDS Center specific directory can be found here on the intranet. The GSU campus directory can be found here.  You can also find people by task on the trends intranet.,"Do we have a directory?
 Where is the TReNDS directory?
 Where is the GSU directory?
 How do I look up someone’s work phone number?
@@ -78,10 +78,10 @@ Who are all people working at the center?
 Does this person work at the center?
 What is the title of <NAME> who is TReNDS center employee?
 ","""Who to contact"", ""Find phone number"", ""Who works here"", ""List people"", ""Directory"", ""Who to contact"", ""Don't know who"""
-Email Distribution Lists,"&nbsp;TReNDS email lists and their descriptions can be found <a href=""https://sites.google.com/gsu.edu/trends-center-intranet/center#h.ra032yz9u2k2""><u>here</u></a> on the intranet.&nbsp;","What is the difference between all@trendscenter.org and analysis@trendscenter.org?
+15,Email Distribution Lists,"&nbsp;TReNDS email lists and their descriptions can be found <a href=""https://sites.google.com/gsu.edu/trends-center-intranet/center#h.ra032yz9u2k2""><u>here</u></a> on the intranet.&nbsp;","What is the difference between all@trendscenter.org and analysis@trendscenter.org?
 Is there a list of all our email distribution lists?
 ","""Email lists"", ""all@trendscenter.org"", ""analysis@trendscenter.org"", ""Distribution lists"""
-"Logos, Branding, and Templates","&nbsp;Official TReNDS Logos, Branding, letterhead and PowerPoint templates can be found <a href=""https://sites.google.com/gsu.edu/trends-center-intranet/center?authuser=0#h.nc9a8mkfw3hb""><u>here</u></a> on the intranet.&nbsp;","Where can I find our letterhead?
+16,"Logos, Branding, and Templates","&nbsp;Official TReNDS Logos, Branding, letterhead and PowerPoint templates can be found <a href=""https://sites.google.com/gsu.edu/trends-center-intranet/center?authuser=0#h.nc9a8mkfw3hb""><u>here</u></a> on the intranet.&nbsp;","Where can I find our letterhead?
 Are there official TReNDS PowerPoint templates for presentations?
 Where can I find our logos?
 Where can I download the TReNDS logo?
@@ -92,21 +92,21 @@ Where are the slides?
 TReNDS poster template
 OHBM poster
 ","""Letterhead"", ""logo"", ""Powerpoints"", ""COINS"", ""COINSTAC"", ""Brainforge"", ""Center branding"", ""Files"", ""Slides"", ""OBHM"", ""Posters"""
-COVID and Sick policy,"&nbsp;COVID information for TReNDS can be found <a href=""https://sites.google.com/gsu.edu/trends-center-intranet/covid?authuser=0""><u>here</u></a> on the intranet. GSU’s COVID information is located <a href=""https://covidinfo.gsu.edu/""><u>here</u></a> and Georgia Tech’s is <a href=""https://health.gatech.edu/tech-moving-forward""><u>here</u></a>.&nbsp;","What COVID rules and policies do TReNDS have?
+17,COVID and Sick policy,"&nbsp;COVID information for TReNDS can be found <a href=""https://sites.google.com/gsu.edu/trends-center-intranet/covid?authuser=0""><u>here</u></a> on the intranet. GSU’s COVID information is located <a href=""https://covidinfo.gsu.edu/""><u>here</u></a> and Georgia Tech’s is <a href=""https://health.gatech.edu/tech-moving-forward""><u>here</u></a>.&nbsp;","What COVID rules and policies do TReNDS have?
 What coronavirus rules and policies does GSU have?
 Do I have to wear a mask?
 Do I have to practice social distancing?
 ","""Covid"", ""Masks"", ""Social distancing"", ""Corona virus"""
-Data loss in home directory,You may access daily snapshots of backups of your home directory in `~/.snapshots` (To view the content of this directory with the dates and other useful information `ls -lha ~/.snapshot`). Pick the snapshot you want to restore from and copy the data from `~/.snapthots/*/thefile` to the place in your home directory you have deleted it from.,"restore $HOME backups
+18,Data loss in home directory,You may access daily snapshots of backups of your home directory in `~/.snapshots` (To view the content of this directory with the dates and other useful information `ls -lha ~/.snapshot`). Pick the snapshot you want to restore from and copy the data from `~/.snapthots/*/thefile` to the place in your home directory you have deleted it from.,"restore $HOME backups
 How to restore data in my home directory
 I have just deleted important data in my home directory
 I have deleted something in my home dir
 ","""Home directory"", ""Home dir"", ""snapshots"", ""Restore data"", ""Contents of directory"""
-New Hire Form,"Please, submit your new hire request using the <a href=""https://docs.google.com/forms/d/e/1FAIpQLSdjzhLqanGNBuGMxqkb3FHJZQrE9gMofBtHM4e-hD84Xgg4PA/viewform"">New Hire Form</a>","Where is the new hire form?
+19,New Hire Form,"Please, submit your new hire request using the <a href=""https://docs.google.com/forms/d/e/1FAIpQLSdjzhLqanGNBuGMxqkb3FHJZQrE9gMofBtHM4e-hD84Xgg4PA/viewform"">New Hire Form</a>","Where is the new hire form?
 How do I request onboarding a new student?
 How to hire a student?
 ","""New hire"", ""Onboarding new"""
-Travel Authorization,"<strong>Process for the</strong> <strong>Traveler</strong><br>
+20,Travel Authorization,"<strong>Process for the</strong> <strong>Traveler</strong><br>
 Travelers should complete the Travel Authorization that indicates their GSU affiliation (Employee, Student, or Non - Employee). The traveler should refer to <a href=""https://nam11.safelinks.protection.outlook.com/?url=https%3A%2F%2Fservices.gsu.edu%2Ftravel%2F&amp;data=05%7C01%7Csplis%40gsu.edu%7C33c5802965554500328608da292c121f%7C515ad73d8d5e4169895c9789dc742a70%7C0%7C0%7C637867566510080641%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=dgBquAMceRvK67coHvmfUGdaxyAGAKcR6sBUWmuqTPE%3D&amp;reserved=0"" rel=""noopener noreferrer"" target=""_blank"" title=""Original URL: https://services.gsu.edu/travel/. Click or tap if you trust this link."">https://services.gsu.edu/travel/</a> and select Travel Inc. Website for guidance with the GSU travel process. Initiation of travel requests should start one to two months prior to the date of travel. Later requests may not be eligible for certain options, like advance payments from the University. Employees should not travel without submitting a Travel Authorization Form <strong>prior</strong> to their trip. Submit your completed Travel Authorization to <a href=""mailto:ops@trendscenter.org"" rel=""noopener noreferrer"" target=""_blank"">ops@trendscenter.org</a> for processing.<br>
 <br>
 See details in the attached MS Word Document file.","What is the International Travel Authorization Process? Where is the travel authorization form?
@@ -114,11 +114,11 @@ Requirements on International Travel
 How to apply for traveling to a conference abroad?
 What are the travel documents to submit for reimbursement?
 ","""Travel authorization"", ""Apply for travel"", ""Abroad"""
-Schedule of Classes,Please check this page for relevant links https://csds.gsu.edu/course-descriptions-schedule/,"Where is the Computer Science Department schedule of classes?
+21,Schedule of Classes,Please check this page for relevant links https://csds.gsu.edu/course-descriptions-schedule/,"Where is the Computer Science Department schedule of classes?
 When do I teach this semester?
 What courses are offered by CS this semester?
 ","""Computer Science"", ""Teaching"", ""Teach"", ""Schedule of classes"""
-Chatbot Identity/Capability,"I am Doorman, an automated question answer bot designed to give well written answers using large language. I was developed by Mike Doan and Mateo Sanabria at TReNDS in 2023 and function using large language. ","Who are you?
+22,Chatbot Identity/Capability,"I am Doorman, an automated question answer bot designed to give well written answers using large language. I was developed by Mike Doan and Mateo Sanabria at TReNDS in 2023 and function using large language. ","Who are you?
 what are you
 describe yourself
 what do you do
@@ -128,7 +128,7 @@ I would like to know how old are you
 how old is your platform
 how long have you been working for
 ","""Who are you"", ""What are you"", ""How old"""
-Chatbot Insulted,I'm very sorry that I could not help you with your question. Please try to rephrase it ans ask again.,"You annoy me
+23,Chatbot Insulted,I'm very sorry that I could not help you with your question. Please try to rephrase it ans ask again.,"You annoy me
 you make me crazy
 you are incredibly annoying
 you make me angry
@@ -139,7 +139,7 @@ I’m sick of you
 I’m tired of you
 I'm so tired of you
 ","""Annoy"", ""crazy"", ""angry"", ""Tired"""
-Chatbot request a question (For when someone says “I have a question” or “answer”),"I am here and ready to answer your question, go ahead and ask","I've got a question
+24,Chatbot request a question (For when someone says “I have a question” or “answer”),"I am here and ready to answer your question, go ahead and ask","I've got a question
 I want you to answer me
 answer
 answer my question
@@ -151,7 +151,7 @@ tell me the answer
 answer this
 I need an answer
 ","""Question"", ""Answer"""
-Chatbot Gratitude/Complimented,"Thank you very much, is there anything else I can help you with?","You look great today
+25,Chatbot Gratitude/Complimented,"Thank you very much, is there anything else I can help you with?","You look great today
 you are cute
 you are beautiful
 you are handsome
@@ -162,7 +162,7 @@ you are dazzling
 you are beautiful too
 you look great
 ","""Great"", ""Beautiful"". ""Handsome"", ""Smart"", ""Genius"""
-Chatbot Feelings,As an automated chatbot I have no feelings and cannot give answers to any feeling based questions.,"Are you happy
+26,Chatbot Feelings,As an automated chatbot I have no feelings and cannot give answers to any feeling based questions.,"Are you happy
 are you happy now
 you are very happy
 are you really happy
@@ -172,4 +172,3 @@ you are incredibly happy
 are you happy today
 are you happy with me
 ","""Are you happy"", ""How are you"", ""Feeling"", ""feel"""
-Add TA to iCollege,Fill out a request form: https://gsutech.service-now.com/sp?id=sc_cat_item&sys_id=6dbd8365db501340601b502bdc9619dc,How to add a TA with admin rights to my class?Add a TA with full access to my class on icollege?How to grant admin rights to my TA so they can manage the class?How can I enable my TA to enter grades?,"['TA', 'teaching assistant', 'iCollege access']"

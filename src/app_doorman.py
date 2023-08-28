@@ -43,6 +43,8 @@ def message(payload):
     inp = "User input: " + "\"" + text + "\""
     if user_id == doorman_id:
         return None
+    if (doorman_id not in text):
+        return None
     if(doorman_id in text):
         text = remove_pings(text,doorman_id)
     if channel_id[0]!='D':
