@@ -91,8 +91,7 @@ def howManyQuestions():
 def printQuestionList():
     with open('llmlads_prompt.txt', 'r', encoding='utf-8') as file:
         content = file.read()
-    client.chat_postMessage(channel='#test', text=f'Current question list:{content}')
-    return '', 200
+    return f'Current question list:{content}', 200
 
 @app.route('/doorman/interactive', methods=['POST'])
 def slack_interactive():
