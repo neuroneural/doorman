@@ -56,7 +56,7 @@ def message(payload):
                     channel=channel_id,
                     text="Please ensure that your question is in the message you are mentioning Doorman in",
                     thread_ts=message_ts)
-    else:
+    elif (channel_id[0] == 'D'):
         index = format_links(doorman(inp,message_ts))
         print(f"Doorman response: {index}")
         if index != None:
