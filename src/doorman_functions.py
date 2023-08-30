@@ -144,6 +144,7 @@ def doormanFailure():
             "As an AI Large Language model I have to admit when I don't get what you're saying. Like I REALLY don't. Could you clarify for me?",
             "Can you say that in a way a 2 month old would understand, thats how old I am.",
             "I'm so sorry I'm new here, find it in your heart to forgive me and try rephrasing that. I might just get it!",
+            "Whoopsie daisy! I dropped the ball on finding this answer!",
     ]
     rand = random.randint(0,len(failure_responses)-1)
     return failure_responses[rand]
@@ -216,21 +217,31 @@ def open_addition_modal(trigger_id):
             "blocks": [
                 {
                     "type": "input",
-                    "block_id": "question_prompt",
-                    "label": {"type": "plain_text", "text": "Question Prompt"},
-                    "element": {"type": "plain_text_input", "action_id": "prompt_input"}
+                    "block_id": "answer_label",
+                    "label": {"type": "plain_text", "text": "Answer Label"},
+                    "element": {"type": "plain_text_input", "action_id": "answer_label_input","placeholder": {
+            "type": "plain_text",
+            "text": "The label befitting your answer"
+        }}
                 },
                 {
                     "type": "input",
                     "block_id": "example_questions",
                     "label": {"type": "plain_text", "text": "Example Questions"},
-                    "element": {"type": "plain_text_input", "action_id": "example_input"}
+                    "element": {"type": "plain_text_input","multiline" : True, "action_id": "example_input", "placeholder": {
+            "type": "plain_text",
+            "text": "List of questions answered by your answer"
+        }
+}
                 },
                 {
                     "type": "input",
                     "block_id": "answer_input",
                     "label": {"type": "plain_text", "text": "Answer"},
-                    "element": {"type": "plain_text_input", "action_id": "answer_input"}
+                    "element": {"type": "plain_text_input", "action_id": "answer_input","placeholder": {
+            "type": "plain_text",
+            "text": "The answer to your question set"
+        }}
                 }
             ],
             "submit": {

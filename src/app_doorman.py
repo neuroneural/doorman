@@ -101,7 +101,7 @@ def slack_interactive():
     if data["type"] == "view_submission" and data["view"]["callback_id"] == "question_modal":
         # Extract data from the modal
         values = data["view"]["state"]["values"]
-        question_prompt = values["question_prompt"]["prompt_input"]["value"]
+        question_prompt = values["answer_label"]["answer_label_input"]["value"]
         example_questions = values["example_questions"]["example_input"]["value"]
         answer = values["answer_input"]["answer_input"]["value"]
 
