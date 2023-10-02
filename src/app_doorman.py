@@ -46,9 +46,9 @@ def message(payload):
     if user_id == doorman_id:
         return None
     if (channel_id[0]!='D' and doorman_id in text):
-        text = remove_pings(text,doorman_id)
-        if len(text) != 0:       
-            index = format_links(doorman(text,message_ts))
+        inp = remove_pings(inp,doorman_id)
+        if len(inp) != 0:       
+            index = format_links(doorman(inp,message_ts))
             client.chat_postMessage(
                     channel=channel_id,
                     text=index,
