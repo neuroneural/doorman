@@ -134,7 +134,7 @@ def remove_pings(user_message, doorman_id):
 
 def format_links(s):
     # Regular expression to match URLs
-    url_pattern = re.compile(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+')
+    url_pattern = str(re.compile(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'))
     match = re.search(url_pattern, s, re.DOTALL)
     if match:
         return s
