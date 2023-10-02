@@ -59,7 +59,7 @@ def message(payload):
                     text="Please ensure that your question is in the message you are mentioning Doorman in",
                     thread_ts=message_ts)
     elif (channel_id[0] == 'D'):
-        index = format_links(doorman(inp,message_ts))
+        index = doorman(inp,message_ts)
         print(f"Doorman response: {index}")
         if index != None:
             client.chat_postMessage(channel=user_id, text=index,thread_ts=message_ts)
