@@ -175,3 +175,11 @@ Adding Teaching Assistants,In order to add a teachers assistant you need to fill
 Add a TA with full access to my class on icollege?
 How to grant admin rights to my TA so they can manage the class?
 How can I enable my TA to enter grades?",
+Recover deleted files,Go to the relevant  users* folder. Run the id  command and note yours: msalman@arctrdlogin001:/data/users1$ id uid=580391(msalman) ... Look for the corresponding .Trash* folder: msalman@arctrdlogin001:/data/users1$ ls ./.Trash-580391 -lR ./.Trash-580391: total 8 drwx------ 2 msalman domain users 4096 Oct 13  2022 files drwx------ 2 msalman domain users 4096 Oct 13  2022 info,"How to find mistakenly deleted folder in the cluster?
+I deleted a folder by accident, how do I find it?
+Where is the recycling bin on the cluster?
+I deleted something on the HPC, where can I find it?",
+Printer Usage,"It is only possible to print from Mac or Windows. Instructions for Mac  To connect to the printer go to http://support.ricoh.com/bb/html/dr_ut_e/rc3/model/imc4500/imc4500.htm. Install the drivers for a Ricoh IM C4500 for your OS. Then add the machine manually. The address is URS6418RIC4500.prt.gsu.edu. When adding, change the default IPP protocol to LPD.  Instructions for PC  Go to http://support.ricoh.com/bb/html/dr_ut_e/rc3/model/imc4500/imc4500.htm  Download the top option, PCL 6 Drive.  Then unzip that file and select the Driver Web Installer in the folder of the same name. That takes you through the process. You should not need an IP, but if you do it is 10.253.208.29.","How do I use the printer?
+I can't get on the printer from my computer.
+Does printing work on mobile?
+How do I print things at the lab?",

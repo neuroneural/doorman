@@ -198,3 +198,13 @@ How to add a TA with admin rights to my class?
 Add a TA with full access to my class on icollege?
 How to grant admin rights to my TA so they can manage the class?
 How can I enable my TA to enter grades?
+30: Recover deleted files
+How to find mistakenly deleted folder in the cluster?
+I deleted a folder by accident, how do I find it?
+Where is the recycling bin on the cluster?
+I deleted something on the HPC, where can I find it?
+31: Printer Usage
+How do I use the printer?
+I can't get on the printer from my computer.
+Does printing work on mobile?
+How do I print things at the lab?
